@@ -3,8 +3,6 @@ const char POUNDSIGN = 0x9C;
 
 int main()
 {
-	//Hurdy Gurdy Truffle Shuffle
-	//Another Test
 	char enterOption();
 	void processOption(char option, int& balance);
 
