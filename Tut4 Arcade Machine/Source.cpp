@@ -8,7 +8,7 @@ int main()
 	void processOption(char option, int& balance);
 
 	cout << "Arcade Machine Menu v1.0";
-	int balance = 100;							//payInitialFee value set in declaration instead of unnecessary function
+	int balance = payInitialFee();
 	char option = enterOption();
 
 	while ((option != 'Q') && (balance > 0))
@@ -17,6 +17,12 @@ int main()
 		option = enterOption();
 	}
 	return 0;
+}
+
+// Hardcoded for now, this function should connect to the machine itself or an online account to read how much money the player has spent
+int payInitialFee()
+{
+	return 100;
 }
 
 char enterOption()
