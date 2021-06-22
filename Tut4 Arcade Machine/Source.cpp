@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+	int payInitialFee();
 	char enterOption();
 	void processOption(char option, int& balance);
 
