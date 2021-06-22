@@ -27,7 +27,6 @@ char enterOption()
 
 void processOption(char option, int& balance)
 {
-	char poundSign = 0x9C;
 	void playGame(int&);
 
 	switch (option)
@@ -36,7 +35,7 @@ void processOption(char option, int& balance)
 		playGame(balance);
 		break;
 	case 'B':
-		std::cout << "The current balance is " << poundSign << balance << std::endl;
+		std::cout << "The current balance is \x9C" << balance << std::endl;
 		break;
 	default:
 		std::cout << "ERROR: Invalid Command!\n";
