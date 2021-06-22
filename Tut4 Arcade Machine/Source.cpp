@@ -37,7 +37,7 @@ void processOption(char option, int& balance)
 		playGame(balance);
 		break;
 	case 'B':
-		cout << "The current balance is \x9C" << balance << std::endl;
+		cout << "The current balance is \x9C" << balance << endl;
 		break;
 	default:
 		cout << "ERROR: Invalid Command!\n";
